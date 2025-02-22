@@ -1,0 +1,90 @@
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Checkbox } from "../components/checkbox";
+
+export default function LoginPage() {
+    return (
+        <div className="flex h-screen">
+            {/* Bên trái - Ảnh minh họa và thông tin */}
+            <div className="hidden md:flex w-2/5 bg-[#ECF8EC] flex-col items-center justify-center p-10 relative">
+                {/* Logo */}
+                <div className="absolute top-8 left-8 flex items-center space-x-2">
+                    <img src="/Logo.png" alt="Logo" className="w-8 h-8" />
+                    <span className="text-lg font-semibold text-green-700">Job Finder</span>
+                </div>
+
+                {/* Hộp thống kê */}
+                <div className="bg-white shadow-md p-3 rounded-lg absolute top-24 left-16 text-center">
+                    <p className="text-xl font-bold text-gray-900">100K+</p>
+                    <p className="text-gray-600 text-sm">People got hired</p>
+                </div>
+
+                {/* Hình ảnh minh họa */}
+                <img src="/Man.png" alt="User" className="w-72 object-cover mt-12" />
+
+                {/* Đánh giá người dùng */}
+                <div className="mt-6 bg-white p-6 shadow-md rounded-lg w-64 ml-64">
+                    <p className="text-sm text-gray-600">
+                        "Great platform for job seekers that searching for new career heights."
+                    </p>
+                    <p className="mt-2 font-bold text-sm">Adam Sandler</p>
+                    <p className="text-xs text-gray-500">Lead Engineer at Canva</p>
+                </div>
+            </div>
+
+            {/* Bên phải - Form đăng nhập */}
+            <div className="w-full md:w-3/5 flex flex-col items-center justify-center px-8 md:px-24 bg-[#F9FDF9]">
+                {/* Nút chọn Job Seeker / Company */}
+                <div className="flex space-x-4 mb-6">
+                    <button className="bg-green-500 text-white px-6 py-2 rounded-lg font-semibold">
+                        Job Seeker
+                    </button>
+                    <button className="text-green-700 font-semibold">Company</button>
+                </div>
+
+                {/* Tiêu đề */}
+                <h2 className="text-4xl font-semibold text-gray-900">Get more opportunities</h2>
+
+                {/* Nút đăng nhập với Google */}
+                <Button variant="outline" className="mt-6 w-full flex items-center justify-center border border-gray-300 bg-white py-2">
+                    <img src="/google.png" alt="Google" className="w-5 h-5 mr-2" />
+                    <span className="text-gray-700 font-medium">Sign Up with Google</span>
+                </Button>
+
+                {/* Hoặc đăng nhập bằng Email */}
+                <div className="my-6 flex items-center w-full">
+                    <div className="w-full border-t border-gray-300"></div>
+                    <p className="px-2 text-gray-500 text-sm">Or sign up with email</p>
+                    <div className="w-full border-t border-gray-300"></div>
+                </div>
+
+                {/* Form nhập Email và Mật khẩu */}
+                <div className="w-full">
+                    <label className="text-sm font-medium text-gray-700">Email Address</label>
+                    <Input type="email" placeholder="Enter email address" className="mt-2 w-full px-4 py-2 border border-gray-300 rounded-md" />
+
+                    <label className="mt-4 text-sm font-medium text-gray-700">Password</label>
+                    <Input type="password" placeholder="Enter password" className="mt-2 w-full px-4 py-2 border border-gray-300 rounded-md" />
+
+                    {/* Checkbox Remember Me */}
+                    <div className="flex items-center mt-4">
+                        <Checkbox id="remember" />
+                        <label htmlFor="remember" className="ml-2 text-sm text-gray-700">Remember me</label>
+                    </div>
+
+                    {/* Nút đăng nhập */}
+                    <Button className="mt-6 bg-green-600 hover:bg-green-700 w-full text-white py-3 rounded-md">
+                        Login
+                    </Button>
+                </div>
+
+                {/* Chính sách bảo mật */}
+                <p className="mt-6 text-xs text-gray-500 text-center">
+                    By clicking 'Continue', you acknowledge that you have read and accept the
+                    <a href="#" className="text-green-600"> Terms of Service</a> and
+                    <a href="#" className="text-green-600"> Privacy Policy</a>.
+                </p>
+            </div>
+        </div>
+    );
+}

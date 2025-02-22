@@ -1,0 +1,6 @@
+{
+    "$schema": "https://shadcn.dev/schema.json",
+    "components": "src/components/ui",
+    "styled": "tailwind",
+    "importAlias": "@"
+}
