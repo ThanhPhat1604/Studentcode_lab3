@@ -1,10 +1,11 @@
-import React from "react";
-
-export function Input({ className, ...props }) {
+export const Input = ({ type, placeholder, ...props }) => {
     return (
         <input
-            className={`border p-2 rounded-md outline-none focus:ring-2 focus:ring-blue-500 ${className}`}
+            type={type}
+            placeholder={placeholder}
+            className="border rounded px-3 py-2 w-full"
             {...props}
         />
     );
-}
+};
+

@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/Button";
-import { Input } from "@/components/ui/input";
+import { Input } from "@/components/ui/Input";
 import { Checkbox } from "../components/checkbox";
 import LoginForm from "../components/login";
 import RegisterForm from "../components/register";
