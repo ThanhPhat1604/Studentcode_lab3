@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/Button";
+import { Button } from "../components/ui/Button";
 import { Input } from "../components/ui/Input";
 import { Checkbox } from "../components/checkbox";
 import LoginForm from "../components/login";
