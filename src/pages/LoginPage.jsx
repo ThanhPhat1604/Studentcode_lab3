@@ -54,10 +54,7 @@ export default function LoginPage() {
                     {isRegister ? "Create your account" : "Get more opportunities"}
                 </h2>
 
-                <Button
-                    variant="outline"
-                    className="mt-6 w-full flex items-center justify-center border border-gray-300 bg-white py-2"
-                >
+                <Button className="mt-6 w-full flex items-center justify-center border border-gray-300 bg-white py-2">
                     <img src="/google.png" alt="Google" className="w-5 h-5 mr-2" />
                     <span className="text-gray-700 font-medium">
                         {isRegister ? "Sign Up" : "Sign In"} with Google
@@ -72,21 +69,18 @@ export default function LoginPage() {
                     <div className="w-full border-t border-gray-300"></div>
                 </div>
 
-                {/* Form nhập Email và Mật khẩu */}
                 <div className="w-full">
                     <label className="text-sm font-medium text-gray-700">Email Address</label>
-                    <Input type="email" placeholder="Enter email address" className="mt-2 w-full px-4 py-2 border border-gray-300 rounded-md" />
+                    <Input type="email" placeholder="Enter email address" className="mt-2" />
 
                     <label className="mt-4 text-sm font-medium text-gray-700">Password</label>
-                    <Input type="password" placeholder="Enter password" className="mt-2 w-full px-4 py-2 border border-gray-300 rounded-md" />
+                    <Input type="password" placeholder="Enter password" className="mt-2" />
 
-                    {/* Checkbox Remember Me */}
                     <div className="flex items-center mt-4">
                         <Checkbox id="remember" />
                         <label htmlFor="remember" className="ml-2 text-sm text-gray-700">Remember me</label>
                     </div>
 
-                    {/* Nút đăng nhập hoặc đăng ký */}
                     {isRegister ? (
                         <Button className="mt-6 bg-green-600 hover:bg-green-700 w-full text-white py-3 rounded-md">
                             Register
@@ -97,7 +91,6 @@ export default function LoginPage() {
                         </Button>
                     )}
 
-                    {/* Nút chuyển đổi giữa Login/Register */}
                     <button
                         className="mt-3 text-sm text-green-600 hover:underline"
                         onClick={() => navigate(isRegister ? "/login" : "/register")}
