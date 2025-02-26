@@ -2,7 +2,7 @@ import { Button } from "../components/ui/Button";
 import { CustomInput } from "../components/ui/CustomInput";
 import { CheckBox } from "../components/checkbox";
 import LoginForm from "@/components/LoginForm";
-import RegisterForm from "@/components/Register";
+import RegisterForm from "@/components/RegisterForm";
 import { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
