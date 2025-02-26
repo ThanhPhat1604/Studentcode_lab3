@@ -1,6 +1,6 @@
 import { Button } from "../components/ui/Button";
 import { CustomInput } from "../components/ui/CustomInput";
-import { CheckBox } from "@/components/Checkbox";
+import { CheckBox } from "../components/checkbox";
 import LoginForm from "@/components/Login";
 import RegisterForm from "@/components/Register";
 import { useState, useEffect } from "react";
@@ -77,7 +77,7 @@ export default function LoginPage() {
                     <CustomInput type="password" placeholder="Enter password" className="mt-2" />
 
                     <div className="flex items-center mt-4">
-                        <Checkbox id="remember" />
+                        <CheckBox id="remember" />
                         <label htmlFor="remember" className="ml-2 text-sm text-gray-700">Remember me</label>
                     </div>
 
