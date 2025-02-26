@@ -1,6 +1,6 @@
 import { Button } from "../components/ui/Button";
 import { CustomInput } from "../components/ui/CustomInput";
-import { Checkbox } from "@/components/Checkbox";
+import { CheckBox } from "@/components/Checkbox";
 import LoginForm from "@/components/Login";
 import RegisterForm from "@/components/Register";
 import { useState, useEffect } from "react";

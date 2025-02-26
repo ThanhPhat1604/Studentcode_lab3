@@ -1,6 +1,6 @@
 import React from "react";
 
-const Checkbox = React.forwardRef(({ className, ...props }, ref) => {
+const CheckBox = React.forwardRef(({ className, ...props }, ref) => {
     return (
         <input
             type="checkbox"
@@ -11,6 +11,6 @@ const Checkbox = React.forwardRef(({ className, ...props }, ref) => {
     );
 });
 
-Checkbox.displayName = "Checkbox";
+CheckBox.displayName = "Checkbox";
 
-export { Checkbox };
+export { CheckBox };
