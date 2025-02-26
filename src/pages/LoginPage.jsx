@@ -1,7 +1,7 @@
 import { Button } from "../components/ui/Button";
-import { Input } from "../components/ui/Input";
+import { CustomInput } from "../components/ui/CustomInput";
 import { Checkbox } from "../components/checkbox";
-import LoginForm from "../components/login";
+import LoginForm from "../components/Login";
 import RegisterForm from "../components/register";
 import { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
@@ -71,10 +71,10 @@ export default function LoginPage() {
 
                 <div className="w-full">
                     <label className="text-sm font-medium text-gray-700">Email Address</label>
-                    <Input type="email" placeholder="Enter email address" className="mt-2" />
+                    <CustomInput type="email" placeholder="Enter email address" className="mt-2" />
 
                     <label className="mt-4 text-sm font-medium text-gray-700">Password</label>
-                    <Input type="password" placeholder="Enter password" className="mt-2" />
+                    <CustomInput type="password" placeholder="Enter password" className="mt-2" />
 
                     <div className="flex items-center mt-4">
                         <Checkbox id="remember" />

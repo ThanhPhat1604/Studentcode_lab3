@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+import { CustomInput } from "@/components/ui/CustomInput";
+
 
 export default function LoginForm({ onSwitch }) {
     const { register, handleSubmit, formState: { errors } } = useForm();
@@ -14,7 +15,7 @@ export default function LoginForm({ onSwitch }) {
             <h2 className="text-2xl font-bold text-center mb-4">Login</h2>
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
                 <div>
-                    <Input
+                    <CustomInput
                         type="email"
                         placeholder="Email"
                         {...register("email", { required: "Email is required" })}
@@ -23,7 +24,7 @@ export default function LoginForm({ onSwitch }) {
                 </div>
 
                 <div>
-                    <Input
+                    <CustomInput
                         type="password"
                         placeholder="Password"
                         {...register("password", { required: "Password is required" })}

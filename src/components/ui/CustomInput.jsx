@@ -1,4 +1,4 @@
-export const Input = ({ type, placeholder, className, ...props }) => {
+export const CustomInput = ({ type, placeholder, className, ...props }) => {
     return (
         <input
             type={type}
