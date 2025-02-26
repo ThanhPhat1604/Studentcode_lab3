@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form";
 import { Button } from "@/components/ui/button";
-import { CustomInput } from "../components/ui/CustomInput";
+import { CustomInput } from "./ui/CustomInput";
 
 export default function RegisterForm({ onSwitch }) {
     const { register, handleSubmit, formState: { errors } } = useForm();

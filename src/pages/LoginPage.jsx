@@ -1,8 +1,8 @@
 import { Button } from "../components/ui/Button";
 import { CustomInput } from "../components/ui/CustomInput";
-import { Checkbox } from "../components/checkbox";
-import LoginForm from "../components/Login";
-import RegisterForm from "../components/register";
+import { Checkbox } from "../components/Checkbox";
+import LoginForm from "@/components/Login";
+import RegisterForm from "@/components/Register";
 import { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
