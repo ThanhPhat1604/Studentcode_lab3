@@ -1,4 +1,4 @@
-export const Button = ({ children, className, ...props }) => {
+export const CustomButton = ({ children, className, ...props }) => {
     return (
         <button className={`px-4 py-2 rounded ${className}`} {...props}>
             {children}

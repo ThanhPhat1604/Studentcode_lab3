@@ -1,6 +1,6 @@
-import { Button } from "../components/ui/Button";
+import { CustomButton } from "../components/ui/CustomButton";
 import { CustomInput } from "../components/ui/CustomInput";
-import { CheckBox } from "../components/checkbox";
+import { CheckBox } from "../components/ui/Checkbox";
 import LoginForm from "@/components/LoginForm";
 import RegisterForm from "@/components/RegisterForm";
 import { useState, useEffect } from "react";
@@ -54,12 +54,12 @@ export default function LoginPage() {
                     {isRegister ? "Create your account" : "Get more opportunities"}
                 </h2>
 
-                <Button className="mt-6 w-full flex items-center justify-center border border-gray-300 bg-white py-2">
+                <CustomButton className="mt-6 w-full flex items-center justify-center border border-gray-300 bg-white py-2">
                     <img src="/google.png" alt="Google" className="w-5 h-5 mr-2" />
                     <span className="text-gray-700 font-medium">
                         {isRegister ? "Sign Up" : "Sign In"} with Google
                     </span>
-                </Button>
+                </CustomButton>
 
                 <div className="my-6 flex items-center w-full">
                     <div className="w-full border-t border-gray-300"></div>
@@ -82,13 +82,13 @@ export default function LoginPage() {
                     </div>
 
                     {isRegister ? (
-                        <Button className="mt-6 bg-green-600 hover:bg-green-700 w-full text-white py-3 rounded-md">
+                        <CustomButton className="mt-6 bg-green-600 hover:bg-green-700 w-full text-white py-3 rounded-md">
                             Register
-                        </Button>
+                        </CustomButton>
                     ) : (
-                        <Button className="mt-6 bg-green-600 hover:bg-green-700 w-full text-white py-3 rounded-md">
+                        <CustomButton className="mt-6 bg-green-600 hover:bg-green-700 w-full text-white py-3 rounded-md">
                             Login
-                        </Button>
+                        </CustomButton>
                     )}
 
                     <button

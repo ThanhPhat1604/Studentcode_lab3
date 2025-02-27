@@ -1,4 +1,4 @@
-import { Button } from "./components/ui/Button";
+import { CustomButton } from "./components/ui/CustomButton";
 import LoginPage from "./pages/LoginPage";
 import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 
